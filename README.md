@@ -3,3 +3,9 @@ A compilation of useful code snippets to create, set up, and develop a Django pr
 
 Code Of Conduct:
 - TBA...
+
+Styling Guidelines:
+- TBA...
+
+Example Page:
+<a>Here (TBA) </a>
