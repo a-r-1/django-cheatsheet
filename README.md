@@ -17,7 +17,7 @@ Requirements:
 
 - [Installing Django](#install_django)
 - [Creating a project](#create_project)
-- [Creating a Django app] (#createApp)
+- [Creating a Django app](#createApp)
 - [Starting the Server](#start_server)
 - [Django Models](#models)
 - [Django Views](#views)
