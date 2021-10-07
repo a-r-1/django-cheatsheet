@@ -17,10 +17,14 @@ Requirements:
 
 - [Installing Django](#install_django)
 - [Creating a project](#create_project)
+- [Creating a Django app] (#createApp)
 - [Starting the Server](#start_server)
 - [Django Models](#models)
 - [Django Views](#views)
 - [URL Patterns](#url_patterns)
+- [Rendering a page using views.py](#pageRender)
+- [Creating a Migration](#migration)
+- [Applying the Migration](#migrate)
 
 
 <a name="install_django"></a>
@@ -48,6 +52,15 @@ django-admin startproject project-name
 
 <pre><code>
 python manage.py runserver
+
+</code></pre>
+
+<a name="createApp"></a>
+
+## Creating an app
+
+<pre><code>
+python manage.py startapp AppName
 
 </code></pre>
 
@@ -93,6 +106,36 @@ path('', views.index, name='index'),
 path('about/', views.about, name='about'),
 path('contact/', views.contact, name='contact'),
 ]
+
+</code></pre>
+
+<a name="pageRender"></a>
+
+## Render a page using views.py 
+
+<pre><code>
+def index(request):
+return render(request, 'index.html')
+
+</code></pre>
+
+
+<a name="migration"></a>
+
+## Creating a migration
+
+<pre><code>
+python manage.py makemigrations
+
+</code></pre>
+
+
+<a name="migrate"></a>
+
+## Applying the migration
+
+<pre><code>
+python manage.py migrate
 
 </code></pre>
 
